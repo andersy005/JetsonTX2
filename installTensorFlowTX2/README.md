@@ -1,6 +1,6 @@
-# installTensorFlowTX2
-April 1, 2017
-Install TensorFlow v1.0.1 on NVIDIA Jetson TX2 Development Kit
+# InstallTensorFlowTX2
+August 19, 2017
+Install TensorFlow v1.3.0 on NVIDIA Jetson TX2 Development Kit
 
 Jetson TX2 is flashed with JetPack 3.0 which installs:
 * L4T 27.1 an Ubuntu 16.04 64-bit variant (aarch64)
@@ -24,10 +24,10 @@ TensorFlow should be built in the following order:
 Installs Java and other dependencies needed. Also builds:
 
 ##### Bazel
-Builds version 0.4.5. Includes patches for compiling under aarch64. 
+Builds version 0.5.3. Includes patches for compiling under aarch64. 
 
 #### cloneTensorFlow.sh
-Git clones v1.0.1 from the TensorFlow repository and patches the source code for aarch64
+Git clones v1.3.0 from the TensorFlow repository and patches the source code for aarch64
 
 #### setTensorFlowEV.sh
 Sets up the TensorFlow environment variables. This script will ask for the default python library path. There are many settings to chose from, the script picks the usual suspects. Uses python 2.7.
